@@ -1,0 +1,25 @@
+package com.atguigu.test;
+/*
+ * 求一个数组的最大值、最小值、平均数
+ * 
+ */
+public class common {
+	public static void main(String[] args) {
+		int[] arr = new int[10];
+		for(int i = 0;i < arr.length;i++) {
+			arr[i] = (int)(Math.random()*(99-10+1)+10);
+			System.out.print(" " + arr[i]);
+		}
+		System.out.println();
+		int max ,min;
+		for(int i = 0;i < arr.length;i++) {
+			max = min = arr[i];
+			if(max < arr[i])
+				max = arr[i];
+			if(min > arr[i])
+				min = arr[i]
+		}
+		System.out.println("最大数是：" + max);
+		System.out.println("最小数是：" + min);
+	}
+}

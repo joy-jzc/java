@@ -1,0 +1,11 @@
+package com.atguigu.firstjava;
+/*
+ * 杨辉三角
+ * 1.第一有1个元素，第n行有n个元素
+ * 2.第一行的第一个元素和最后一个元素都是1
+ * 3，从第三行开始，对于非第一个元素和最后一个元素，即，
+ * yanghui[i][j] = yanghui[i-1][j-1] + yanghui[i-1][j];
+ */
+public class yanghui {
+	
+}
