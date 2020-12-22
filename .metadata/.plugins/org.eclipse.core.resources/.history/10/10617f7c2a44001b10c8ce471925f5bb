@@ -1,6 +1,6 @@
 package com.atguigu.test;
 /*
- * 数组的复制、反转、查找（二分法查找）
+ * 数组的复制、反转、查找（搜索）
  * 
  */
 
@@ -40,24 +40,24 @@ public class ArrayTest {
 		//二分法查找
 		//前提：所要查找的数组必须有序
 		int[] arr2 = new int[]{10,20,30,40,50,60,80,90,100};
-	    int dest1 = 10;
+	    int dest1 = 20;
 	    int start = 0;//初始索引
 	    int end = arr2.length - 1;//结束索引
 	    boolean isFlag1 = true;
-	    while(start <= end) {
+	    while(start >= end) {
 	    	int tem = (start + end)/2;
 	    	if(dest1 == arr2[tem]) {
 	    		System.out.println("找到了指定元素，位置为：" + tem);
 	    		isFlag1 = false;
 	    		break;
 	    	}else if(dest1 > arr2[tem]){
-	    		start = tem + 1;
+	    		start = tem;
 	    	} else if (dest1 < arr2[tem]) {
-	    		end = tem - 1;
+	    		end = tem;
 	    	}	
 	    }
-	    if(isFlag1) {
-	    	System.out.println("很遗憾，没有找到!");
+	    if(isFlag) {
+	    	System.out.println("很遗憾，没有找到");
 	    }
 	}
 }
