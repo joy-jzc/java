@@ -21,7 +21,7 @@ public class ArraysTest {
 		Arrays.sort(arr2);
 		System.out.println(Arrays.toString(arr2));
 		//5.int binarySearch(int[]a,int key)对排序后的数组进行二分法检索指定的值
-		int index = Arrays.binarySearch(arr2,3);
-		System.out.println(index);
+		
+		
 	}
 }
