@@ -17,6 +17,10 @@ public class OOPTest {
 	
 	//调用对象
 	p1.talk("Chinese");
+	
+	//******
+	Person p2 = new Person();
+	System.out.println(p2.name);
 
 	 }
 }

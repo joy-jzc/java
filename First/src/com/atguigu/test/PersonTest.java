@@ -17,5 +17,6 @@ class Person{
 	  }
 	  public void talk(String language){
 		  System.out.println("人可以说话，使用的是" + language);
+		  
 	  }
 }	
